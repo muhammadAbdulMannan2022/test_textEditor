@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ed9fbbba08.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body
+    style="width: 100%; height: 100vh"
+    class="flex items-center justify-center"
+  >
+    <div class="w-2/3 bg-blue-400 p-4">
+      <div class="flex items-center justify-between py-2">
+        <div>
+          <i style="cursor: pointer" id="bold" class="fa-solid fa-bold"></i>
+          <i
+            style="cursor: pointer"
+            id="italic"
+            class="fa-solid fa-italic mx-3"
+          ></i>
+          <i
+            style="cursor: pointer"
+            id="underline"
+            class="fa-solid fa-underline"
+          ></i>
+        </div>
+        <div>
+          <i
+            style="cursor: pointer"
+            id="alignLeft"
+            class="mx-1 fa-solid fa-align-left"
+          ></i>
+          <i
+            style="cursor: pointer"
+            id="alignRight"
+            class="mx-1 fa-solid fa-align-right"
+          ></i>
+          <i
+            style="cursor: pointer"
+            id="alignCenter"
+            class="mx-1 fa-solid fa-align-center"
+          ></i>
+          <i
+            style="cursor: pointer"
+            id="alignJustify"
+            class="mx-1 fa-solid fa-align-justify"
+          ></i>
+        </div>
+        <div class="flex">
+          <select class="mx-1" name="fornt" id="font">
+            <option value="text-xs">12</option>
+            <option value="text-sm">14</option>
+            <option value="text-base">16</option>
+            <option value="text-lg">18</option>
+            <option value="text-xl">20</option>
+            <option value="text-2xl">24</option>
+            <option value="text-3xl">30</option>
+            <option value="text-4xl">36</option>
+            <option value="text-5xl">48</option>
+            <option value="text-6xl">60</option>
+            <option value="text-7xl">72</option>
+            <option value="text-8xl">96</option>
+            <option value="text-9xl">128</option>
+          </select>
+          <p id="textTransform" class="mx-1">aA</p>
+          <input class="mx-1" type="color" name="color" id="color" />
+        </div>
+      </div>
+      <hr class="w-full h-1 rounded bg-gray-200 border-none my-2" />
+      <textarea
+        style="resize: none; border: 2px solid gray"
+        placeholder="your text here"
+        name="textEdito"
+        id="textEdito"
+        class="w-full p-1 h-40"
+      ></textarea>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
